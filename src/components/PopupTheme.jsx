@@ -6,7 +6,6 @@ import { Alert } from './Alert';
 import { useNavigate } from 'react-router-dom'
 
 export const PopupTheme = () => {
-  const history = useNavigate()
   const [enabled, setEnabled] = useState(getLocalStorage() === 'dark' ? true : false)
   const [success, setSuccess] = useState(false)
   
@@ -18,7 +17,6 @@ export const PopupTheme = () => {
       setSuccess({success: true})
       setTimeout(() => {
         setSuccess({success: false})
-        history('/')
       }, 2000)
       
       setLocalStorage('dark')
@@ -27,7 +25,6 @@ export const PopupTheme = () => {
       setSuccess({success: true})
       setTimeout(() => {
         setSuccess({success: false})
-        history('/')
       }, 2000)
       setLocalStorage('light')
     }
