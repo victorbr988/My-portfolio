@@ -3,7 +3,6 @@ import { Switch } from '@headlessui/react';
 import { getLocalStorage, setLocalStorage } from '../helpers';
 import { motion } from 'framer-motion';
 import { Alert } from './Alert';
-import { useNavigate } from 'react-router-dom'
 
 export const PopupTheme = () => {
   const [enabled, setEnabled] = useState(getLocalStorage() === 'dark' ? true : false)
@@ -52,7 +51,7 @@ export const PopupTheme = () => {
         <motion.div>
           {success.success === true ?(
           <motion.div 
-            className="absolute top-32"
+            className="absolute top-64 lg:top-32"
             initial={{
               right: 100,
               duration: 1,

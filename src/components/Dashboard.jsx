@@ -17,11 +17,11 @@ export function Dashboard() {
 
                     <div className="flex items-center gap-3 mt-6-mx-2">
                         <ButtonRedirectSecondary href="https://github.com/victorbr988" >
-                            <FiGithub className='dark:text-gray-300 text-lg' />
+                            <FiGithub className='dark:text-gray-300 text-gray-900 text-lg' />
                         </ButtonRedirectSecondary>
                     
                         <ButtonRedirectPrimary href="https://www.linkedin.com/in/victor-gabriel-2543241b8/" >
-                            <FiLinkedin className='dark:text-gray-300 text-lg' />
+                            <FiLinkedin className='dark:text-gray-300 text-blue-900 text-lg' />
                         </ButtonRedirectPrimary>
                     </div>
                 </div>

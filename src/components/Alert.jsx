@@ -11,8 +11,7 @@ export const Alert = () => {
       
       <div className="px-4 py-2 -mx-3">
         <div className="mx-3">
-          <span className="font-semibold text-emerald-500 dark:text-emerald-400">Sucesso</span>
-          <p className="text-sm text-gray-600 dark:text-gray-200">Seu tema foi alterado para {getLocalStorage()} </p>
+          <p className="text-sm text-gray-600 dark:text-gray-200">Tema {getLocalStorage() === 'dark' ? 'escuro' : 'claro'} </p>
         </div>
       </div>
     </div>  
