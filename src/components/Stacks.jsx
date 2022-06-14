@@ -6,13 +6,14 @@ import javascript from '../assets/javascript.svg'
 import react from '../assets/react.svg'
 import vite from '../assets/vite.svg'
 import jest from '../assets/jest.svg'
+import tailwind from '../assets/tailwind.svg'
 import { useViewportScroll, motion, useTransform } from 'framer-motion'
 
 export function Stacks() {
   const { scrollYProgress } = useViewportScroll()
   const scale = useTransform(scrollYProgress, [0, 1], [0, 0.9]);
   return (
-    <section className="bg-white flex md:w-full justify-center dark:bg-gray-900">
+    <section className="bg-white flex w-screen justify-center dark:bg-gray-900">
       <div className="container px-6 py-10">
         
           <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">Conheça minhas<span className="text-blue-500 ml-2">Habilidades</span></h1>
@@ -32,6 +33,10 @@ export function Stacks() {
                 <div className="grid grid-cols-2 items-center text-gray-800 gap-2 dark:text-white">
                   <Asset link={react} />
                   React
+                  <Asset link={jest} />
+                  Jest
+                  <Asset link={tailwind}/>
+                  TailwindCss
                 </div>
               </div>
             </motion.div>
@@ -51,8 +56,6 @@ export function Stacks() {
                   Git
                   <Asset link={vite} />
                   Vite
-                  <Asset link={jest} />
-                  Jest
                 </div>
               </div>
             </motion.div>

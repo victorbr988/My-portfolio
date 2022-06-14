@@ -18,13 +18,14 @@ export const ButtonSecondary = ({ title }) => {
       className="border-[1px] py-3 flex border-gray-200 bg-white text-gray-600 dark:border-none dark:bg-gray-800 px-8 text-sm font-medium tracking-wide dark:text-white capitalize rounded-md sm:mx-2 dark:hover:bg-gray-500 focus:outline-none"
     >
       {title}
-  </NavLink>
+    </NavLink>
   )
   
 }
 export const ButtonRedirectPrimary = ({ children, href }) => {
   return (
     <a
+      target="_blank"
       href={href}
       onClick={() => handleClick()}
       className="px-2 flex items-center justify-center gap-2 py-3 w-1/2 text-sm font-medium tracking-wide text-white capitalize bg-blue-700 rounded-md sm:mx-2 hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
@@ -38,9 +39,10 @@ export const ButtonRedirectPrimary = ({ children, href }) => {
 export const ButtonRedirectSecondary = ({ children, href }) => {
   return (
     <a
+      target="_blank"
       href={href}
       onClick={() => handleClick()}
-      className="border-[1px] w-1/2 flex items-center justify-center gap-2 py-3 px-2 border-gray-500 hover:bg-gray-600   dark:border-none bg-gray-800 text-sm font-medium tracking-wide text-white capitalize rounded-md sm:mx-2 dark:hover:bg-gray-600 focus:outline-none"
+      className="border-[1px] w-1/2 dark:border-gray-700 flex items-center justify-center gap-2 py-3 px- hover:bg-gray-600 bg-gray-800 text-sm font-medium tracking-wide text-white capitalize rounded-md sm:mx-2 dark:hover:bg-gray-600 focus:outline-none"
     >
       {children}
     </a>

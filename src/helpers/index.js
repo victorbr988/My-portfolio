@@ -1,4 +1,4 @@
-export const setLocalStorage = (darkTheme = 'ligth') => {
+export const setLocalStorage = (darkTheme) => {
   localStorage.setItem('PreferTheme', darkTheme)
 }
 

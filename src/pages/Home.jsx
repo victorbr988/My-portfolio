@@ -3,6 +3,7 @@ import { Dashboard } from '../components/Dashboard'
 import { Stacks } from '../components/Stacks'
 import { motion } from "framer-motion";
 import { Navbar } from '../components/Navbar'
+import { Education } from '../components/Education';
 
 function Home() {
   return (
@@ -18,14 +19,17 @@ function Home() {
         opacity: 1,
       }}
     >
-      <div className="flex flex-col dark:bg-gray-900">
+      <div className="flex flex-col w-screen dark:bg-gray-900">
         <Navbar />
-        <div className='flex md:w-full '>
-          <div className="flex flex-col mt-32 items-center w-full">
-            <div className="flex items-center ">
+        <div className='flex w-screen'>
+          <div className="flex flex-col mt-32 w-screen items-center">
+            <div className="flex items-center w-full justify-center">
               <Dashboard/>  
             </div>
-            <div className='md:flex md:w-[800px] dark:bg-red-900'>
+            <div>
+              <Education />
+            </div>
+            <div className='flex flex-col'>
               <Stacks />
             </div>
             

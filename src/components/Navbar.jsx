@@ -2,24 +2,25 @@ import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import profile2 from '../assets/images/portfolio.png';
 import { LinkNavigation } from './LinkNavigation';
+import { PopupTheme } from './PopupTheme';
 
 export const Navbar = () => {
   const [visibility, setVisibility] = useState(false)
   return (
-    <nav class="bg-white shadow fixed w-full dark:bg-gray-800">
-        <div class="px-6 py-4 mx-auto">
-            <div class="md:flex items-center md:justify-between">
-                <div class="flex items-center justify-between">
-                    <div class="text-xl font-semibold text-gray-700">
-                        <h2 class="text-2xl font-bold text-gray-800 transition-colors duration-200 transform dark:text-white lg:text-3xl">Bem Vindo</h2>
+    <nav className="bg-white shadow z-50 fixed w-full dark:bg-gray-800">
+        <div className="px-6 py-4">
+            <div className="md:flex items-center md:justify-between">
+                <div className="flex items-center justify-between">
+                    <div className="text-xl font-semibold text-gray-700">
+                        <h2 className="text-2xl font-bold text-gray-800 transition-colors duration-200 transform dark:text-white lg:text-3xl">Bem-vindo</h2>
                     </div>
 
                     {/* Mobile menu button */}
-                    <div class="flex md:hidden">
+                    <div className="flex md:hidden">
                         <button 
                           onClick={() => setVisibility((prevState) => prevState = !visibility)}
-                          type="button" class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
-                            <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                          type="button" className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
+                            <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current">
                                 <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
                             </svg>
                         </button>
@@ -27,19 +28,19 @@ export const Navbar = () => {
                 </div>
 
                 {/* Mobile Menu open: "block", Menu closed: "hidden"  */}
-                <div class={`${visibility === true ?  'flex-col': 'hidden'} flex-1 md:flex items-center md:justify-between`}>
-                    <div class="flex flex-col md:flex-row md:items-center md:mx-8">
+                <div className={`${visibility === true ?  'flex-col': 'hidden'} flex-1 md:flex items-center md:justify-between`}>
+                    <div className="flex flex-col md:flex-row md:items-center gap-2 md:mx-8">
                         <LinkNavigation href="/">Home</LinkNavigation>
                         <LinkNavigation href="/work">Trabalhos</LinkNavigation>
-                        <LinkNavigation href="/config">Alterar tema</LinkNavigation>
+                        <PopupTheme />
                         
                     </div>
 
-                    <div class="flex items-center mt-4 md:mt-0">
-                        <button type="button" class="flex items-center focus:outline-none" aria-label="toggle profile dropdown">
-                            <img src={profile2} class=" w-12 md:w-22 md:h-22 rounded-full h-12" alt="avatar" />
+                    <div className="flex items-center mt-4 md:mt-0">
+                        <button type="button" className="flex items-center focus:outline-none" aria-label="toggle profile dropdown">
+                            <img src={profile2} className=" w-12 md:w-22 md:h-22 rounded-full h-12" alt="avatar" />
 
-                            <h3 class="mx-2 text-sm font-medium text-gray-700 dark:text-gray-200 md:hidden">Victor gabriel</h3>
+                            <h3 className="mx-2 text-sm font-medium text-gray-700 dark:text-gray-200 md:hidden">Victor gabriel</h3>
                         </button>
                     </div>
                 </div>
