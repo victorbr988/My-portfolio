@@ -10,9 +10,9 @@ export function Dashboard() {
                     <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">Quem sou eu</h2>
 
                     <p className="mt-4 text-gray-600 dark:text-gray-400 lg:max-w-md">
-                        Olá , eu sou Victor Gabriel, sou desenvolvendor Full Stack.
-                        Minha linguagem de programação preferida é JavaScript. Comecei a estudar programação 
-                        em 2020 como autodidata e desde então sigo me aperfeiçoando.
+                        Olá , eu sou Victor Gabriel, sou desenvolvendor Front-End.
+                        Minha linguagem preferida é JavaScript, estou trabalhando atualmente com React.js + Vite
+                        que é um framework JavaScript, mais abaixo você verá minha outras habilidades.
                     </p>
 
                     <div className="flex items-center gap-3 mt-6-mx-2">

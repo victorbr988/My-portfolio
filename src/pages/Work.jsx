@@ -10,17 +10,9 @@ export function Work() {
       <div className="flex flex-wrap gap-6">
       {
         githubProjects.map((project) => (
-          <CardProject 
-            title={project.title}
-            description={project.description}
-            image={project.image}
-            web={project.Web}
-            github={project.github}
-            id={project.id}
-          />
+          <CardProject data={project} model={project.Web.includes('https')} />
         ))
       }
-        
       </div>
     </main>
   )
