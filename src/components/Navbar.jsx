@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import profile2 from '../assets/images/portfolio.png';
 import { LinkNavigation } from './LinkNavigation';
 import { PopupTheme } from './PopupTheme';
