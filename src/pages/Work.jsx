@@ -7,7 +7,7 @@ export function Work() {
       <div className='h-32'>
         <Navbar />
       </div>
-      <div className="flex flex-wrap gap-6">
+      <div className="flex flex-wrap justify-center">
       {
         githubProjects.map((project) => (
           <CardProject data={project} model={project.Web.includes('https')} />

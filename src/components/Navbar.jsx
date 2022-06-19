@@ -11,7 +11,7 @@ export const Navbar = () => {
             <div className="md:flex items-center md:justify-between">
                 <div className="flex items-center justify-between">
                     <div className="text-xl font-semibold text-gray-700">
-                        <h2 className="text-2xl font-bold text-gray-800 transition-colors duration-200 transform dark:text-white lg:text-3xl">Bem-vindo</h2>
+                        <h2 className="text-2xl font-bold text-gray-800 transition-colors duration-200 transform dark:text-white lg:text-3xl">Bem vindo</h2>
                     </div>
 
                     {/* Mobile menu button */}
