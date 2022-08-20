@@ -19,11 +19,9 @@ export const GroupButtonsStatistics = () => {
   }
 
   useEffect(() => {
-    return async () => {
-      updateNumberRepository(),
-      updateNumberFollowers()
-    }
-  })
+    updateNumberRepository(),
+    updateNumberFollowers()
+  },[])
 
   return (
     <div className='flex justify-center gap-4'>
