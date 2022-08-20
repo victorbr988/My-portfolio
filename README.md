@@ -7,11 +7,9 @@
 <ul>
   <li>React.js</li>
   <li>JavaScript</li>
-  <li>React Testing Library</li>
   <li>MerakiUi</li>
   <li>Tailwindcss</li>
   <li>React-icons</li>
-  <li>Context API</li>
   <li>Hooks</li>
 </ul>
 
