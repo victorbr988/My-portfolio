@@ -1,4 +1,5 @@
-import wallet from '../assets/images/wallet.png'
+import wallet from '../assets/images/wallet.png';
+import mksSistemas from '../assets/images/mksSistemas.png';
 
 export const githubProjects = [
   {
@@ -10,5 +11,15 @@ export const githubProjects = [
     image: wallet,
     Web: 'https://carteira-digital-six.vercel.app/',
     github: 'https://github.com/victorbr988/Carteira-Digital'
+  },
+  {
+    id: Date(),
+    date: '27 de agosto de 2022',
+    Category: ['React.js', 'Redux', 'Tailwindcss'],
+    title: 'Landing page de vendas',
+    description: 'Desafio técnico oferecido pela empresa MKS Desenvolvimento de Sistemas',
+    image: mksSistemas,
+    Web: 'https://mks-desafio-tech.vercel.app/',
+    github: 'https://github.com/victorbr988/mks-desafio'
   }
 ]
