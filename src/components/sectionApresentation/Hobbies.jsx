@@ -9,7 +9,7 @@ export const Hobbies = () => {
           href='#'
         >
           <FiMusic className='text-2xl' />
-          <span className='hidden group-hover:block'>músicas</span>
+          <span>músicas</span>
         </ButtonStatistic>
       </section>
       
@@ -18,7 +18,7 @@ export const Hobbies = () => {
           href='#'
         >
           <FiFilm className='text-2xl' />
-          <span className='hidden group-hover:block'>Filmes</span>
+          <span>Filmes</span>
         </ButtonStatistic>
       </section>
       
@@ -27,7 +27,7 @@ export const Hobbies = () => {
           href='#'
         >
           <BiFootball className='text-2xl'  />
-          <span className='hidden group-hover:block'>Esportes</span>
+          <span>Esportes</span>
         </ButtonStatistic>
       </section>
       <section>
@@ -35,7 +35,7 @@ export const Hobbies = () => {
           href='#'
         >
           <BiGame className='text-2xl'  />
-          <span className='hidden group-hover:block'>Jogos</span>
+          <span>Jogos</span>
         </ButtonStatistic>
       </section>
     </div>
