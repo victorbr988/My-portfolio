@@ -4,7 +4,8 @@ import { toast } from 'react-hot-toast';
 
 export const Footer = ({openModal}) => {
   return (
-    <footer className='w-full bg-white p-10' id='contactUs'>
+    <footer className='w-full flex flex-col gap-10 bg-white p-10' id='contactUs'>
+      <h2 className='text-center text-3xl text-semibold'>Entre em contato comigo !</h2>
       <div className=" md:flex-row flex-col flex gap-3 justify-center items-center cursor-pointer">
         <button 
           onClick={openModal}
