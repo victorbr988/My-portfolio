@@ -5,7 +5,7 @@ export const ProjectsMostBeRelevants = () => {
   return (
    githubProjects.map((details) => (
     <div className="flex flex-col gap-10">
-      <div className="drop-shadow-2xl shadow-xl shadow-gray-900/50 bg-white rounded-3xl">
+      <div className="shadow-xl shadow-gray-900/50 bg-white rounded-3xl">
         <div className="flex p-4 gap-2">
           <div className="bg-red-600 h-3 w-3 rounded-full"></div>
           <div className="bg-yellow-300 h-3 w-3 rounded-full"></div>

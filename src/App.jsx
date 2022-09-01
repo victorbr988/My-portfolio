@@ -1,16 +1,36 @@
+import { useState } from 'react';
 import { Header } from './components/Header';
 import { GroupAnalytcs } from './components/sectionApresentation/GroupAnalytcs';
 import { Apresentation } from "./components/sectionApresentation/Apresentation";
 import { GroupByCertificated } from './components/sectionCertified/groupByCertificated';
 import { SkillsCollections } from './components/sectionLangs/SkillsCollections';
 import { ProjectsMostBeRelevants } from './components/ProjectsMostBeRelevants';
+import { Modal } from './components/Modal';
+import { Footer } from './components/footer';
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false)
+
+  function closeModal() {
+    setIsOpen(false)
+  }
+
+  function openModal() {
+    setIsOpen(true)
+  }
 
   return (
     <main className="font-sans w-full min-h-screen bg-orange-400">
-      <Header />
+      <Modal 
+      isOpen={isOpen}
+      closeModal={closeModal}
+      />
       <div className='w-full flex flex-col bg-gray-100 items-center'>
+        <section className="lg:w-2/3 w-full">
+          <Header 
+            openModal={openModal}
+          />
+        </section>
         <section className="lg:w-2/3 w-full py-10 md:gap-0 gap-5 flex flex-col md:flex-row justify-between items-center">
           <section className='md:w-1/2 w-full'>
             <Apresentation />
@@ -42,6 +62,9 @@ function App() {
           </div>
         </div>
       </section>
+      <Footer
+        openModal={openModal}
+      />
     </main>
   )
 }
