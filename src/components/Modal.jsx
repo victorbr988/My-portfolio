@@ -30,14 +30,14 @@ export const Modal = ({ isOpen, closeModal }) => {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-full max-w-lg transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
                     className="text-2xl mb-10 text-center font-medium leading-6 text-gray-900"
                   >
                     Entrar em contato
                   </Dialog.Title>
-                  <form className="mt-2 md:flex-row mb-3 flex flex-col gap-3">
+                  <form className="mt-2 md:flex-row mb-3 justify-between flex flex-col gap-3">
                     <section className='flex flex-col'>
                       <label htmlFor="name">Nome</label>
                       <input
