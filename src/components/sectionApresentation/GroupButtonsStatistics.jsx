@@ -24,24 +24,24 @@ export const GroupButtonsStatistics = () => {
   },[])
 
   return (
-    <div className='flex justify-center gap-4'>
+    <div className='flex flex-wrap justify-center gap-4'>
       <ButtonStatistic
         href='https://github.com/victorbr988?tab=repositories'
       >
         <FiFlag /> {totalRepository}
-        <span className='hidden group-hover:block'>Repositórios</span>
+        <span>Repositórios</span>
       </ButtonStatistic>
       <ButtonStatistic
         href='#'
       >
         <FiUsers /> {totalFollowers}
-        <span className='hidden group-hover:block'>Seguidores</span>
+        <span>Seguidores</span>
       </ButtonStatistic>
       <ButtonStatistic
         href='https://www.linkedin.com/pulse/normaliza%C3%A7%C3%A3o-de-tabelas-victor-gabriel/'
       >
         <FiBookOpen /> 1
-        <span className='hidden group-hover:block'>Artigos</span>
+        <span>Artigos</span>
       </ButtonStatistic>
     </div>
   );
